@@ -1,0 +1,95 @@
+.mojFooter{
+    position: absolute;
+    width: 100%;
+    background-color: #f8f8f8;
+    color: #333333;
+    min-height: 20px;
+    bottom: 2px;
+    left: 0;
+}
+
+#nextMain, #floorWithWheel{
+    display: none;
+}
+
+#floorPic{    
+    background-color: ivory;        
+    box-shadow: 3px 3px 3px #333;
+    padding: 1rem;
+}
+
+#imgWheel{
+    position: absolute;
+    background: url('../images/vastuwheelbk.png') center center;
+    width: 700px;
+    height: 700px;
+    background-size: cover;
+    z-index: 999;
+}
+
+#imgCropFloor{
+    position: absolute;
+}
+
+#compassCanvas{
+    position: relative;
+    top: -446px;
+    left: -148px;
+    z-index: 999;
+}
+
+#degreeToRotate{
+    width: 5em;
+}
+
+.btnSame{
+    width: 8rem;
+}
+
+#divToDowload{
+    height: 750px;
+}
+
+#print{
+    position: absolute;
+}
+.logo-img {
+    width: 132px;
+    height: 100px;
+    object-fit: cover;
+  }
+
+  footer {
+    clear: both;
+    align-items: center;
+  }
+  .foot {
+    text-align: center;
+  }
+  
+  .foot .img {
+    align-items: center;
+  }
+  #copyright {
+    font-size: 12px;
+    text-align: center;
+    margin-top: 18px;
+  }
+  .img {
+    width: 140px;
+    height: 170px;
+    justify-content: center;
+  }
+
+  .Welcome-1 {
+    font-size: 55px;
+    text-transform: capitalize;
+    font-style: normal;
+    color: rgb(185, 42, 56);
+    margin-left: 550px;
+    margin-top: -60px;
+  }
+
+  .headflex {
+    flex-direction: column;
+  }
