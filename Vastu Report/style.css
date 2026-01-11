@@ -1,0 +1,219 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Graduate&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+ 
+ select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding-right: 20px;
+  background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMiAxMiIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMTIgMTIiPjxwYXRoIGQ9Ik0zIDJIMkgyVjN6bTAgMEgxVjNIMHoiLz48L3N2Zz4=')
+              no-repeat right center;
+  background-size: 14px;
+}
+
+select::-ms-expand {
+  display: none;
+}
+@media print {
+  .no-print {
+    display: none;
+  }
+  .print-hide {
+    display: none;
+  }
+  .ql-toolbar{
+    display: none;
+  }
+  .input-section{
+    display: none;
+  }
+  select, select option {
+    border: none !important;
+}
+#toggle-btn {
+  display: none;
+}
+}
+body {
+  background-color: #fff;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.container {
+  /* width: 21cm;
+  height: 29.7cm; */
+  margin: 20px auto;
+  padding: 20px; 
+  page-break-after: always;
+}
+header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+}
+article {
+  margin: 0 auto;
+}
+.input-section{
+  text-align: center;
+  margin-top: 20px;
+}
+
+#display-container {
+  text-align: center;
+  font-weight: 600;
+  margin-top: 10px;
+  color: rgb(185, 42, 56);
+}
+#display-container img {
+  width:800px; /* Standard A4 width in pixels for web */
+  height:750px; /* Maintain aspect ratio */
+  max-width: 100%; /* Ensure image doesn't overflow container */
+}
+.img {
+  width: 140px;
+  height: 170px;
+  justify-content: center;
+}
+
+.logo-img {
+  width: 132px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.report {
+  font-size: 55px;
+  text-transform: capitalize;
+  font-family: "Graduate", serif;
+  font-weight: 1000;
+  font-style: normal;
+  color: rgb(185, 42, 56);
+  text-align: center;
+}
+
+.Slogan{
+  text-align: center;
+  font-weight: 600;
+  margin-top: 10px;
+}
+.foot p {
+  font-size: 10px;
+  font-family: "Graduate", serif;
+  color:rgb(185, 42, 56)
+}
+
+.foot p b{
+  font-size: 20px;
+  font-family: "Graduate", serif;
+  color:rgb(185, 42, 56)
+}
+.foot {
+  text-align: center;
+  margin-top: 60px;
+}
+.foot .img {
+  align-items: center;
+  height: 45px;
+  width: 45px;
+}
+
+.toggle-btn {
+  display: block;
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.toggle-btn:hover {
+  background-color: #0056b3;
+}
+/* ----------------------------------------------------------------- */
+.remark {
+  margin-left: 8px;
+  margin-right: 10px;
+}
+.vastutext {
+  font-size: 18px;
+  text-decoration: underline;
+  font-style: normal;
+  margin-left: 5.5px;
+  margin-top: 110px;
+  text-align: center;
+}
+.distext {
+  text-align: left;
+  padding:18px;
+}
+.Disclaimer {
+  font-size: 18px;
+  text-decoration: underline;
+  font-style: normal;
+  margin-top: 410px;
+  text-align: center;
+}
+
+.shakti-img {
+  width: 600px;
+  height: 600px;
+  object-fit: cover;
+  margin: 0 auto; 
+  display: block; 
+  margin-top: 8px;
+  margin-bottom: -110px;
+  border: none;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+tbody{
+  padding: 10px;
+}
+tr.blue-black {
+  background-color: rgba(0, 0, 255, 0.299);
+  color: black;
+}
+tr.Orange {
+  background-color: orange;
+  color: black;
+}
+tr.Green {
+  background-color: green;
+  color: black;
+}
+tr.Red {
+  background-color: red;
+  color: black;
+}
+tr.Yellow {
+  background-color: yellow;
+  color: black;
+}
+tr.Grey {
+  background-color: grey;
+  color: black;
+}

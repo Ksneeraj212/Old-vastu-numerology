@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Playfair+Display:ital,wght@1,500&family=Poppins:wght@400;500;700&family=Rubik:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/quill@2.0.0-rc.2/dist/quill.snow.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/quill@2.0.0-rc.2/dist/quill.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <title>ENERGY VASTU REPORT</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <img
+          src="image/Jayant Pandey Logo.webp"
+          alt="Neeraj Shukla"
+          class="logo-img"
+        />
+      </header>
+      <article>
+        <h1 class="report">ENERGY VASTU REPORT</h1>
+        <h3 class="Slogan">Energy Gives Peace & Happiness</h3>
+      </article>
+      <section class="input-section">
+        <h2>Upload Image</h2>
+        <input type="file" id="imageInput" accept="image/*"/>
+        <h2>Enter Text</h2>
+        <textarea id="textInput" rows="4" cols="50" placeholder="Enter your text here..."></textarea>
+        <button onclick="displayContent()">Show Image and Text</button>
+    </section>
+        <!-- Display Container -->
+        <section id="display-container">
+        </section>
+      <footer>
+        <div class="foot">
+          <img
+            class="img"
+            src="/image/jayant_pandeyabout_edited_edited.webp"
+          />
+          <p>
+            <b>Jayant Pandey </b><br />
+            Business & Energy Vastu Guru
+            <br />
+            Kaatyaayani Jyotish
+            <br />
+            Call : +91 9004500006 , 9833137666 , +971 507383393
+            <br />
+            Mumbai/Bhilai/Delhi/Jaipur/Dubai/London
+            <br/>
+            <a href="http://bit.ly/3RiBHOA" style="text-decoration:none">E-Business Card</a> |
+            <a href=" https://www.JayantPandey.com " style="text-decoration:none">www.JayantPandey.com</a><br
+            />
+           
+          </p>
+        </div>
+      </footer>
+    </div>
+    <div class="container">
+      <header>
+        <img
+          src="image/Jayant Pandey Logo.webp"
+          alt="Neeraj Shukla"
+          class="logo-img"
+        />
+      </header>
+      <main>
+        <article>
+          <h2 class="Disclaimer">Disclaimer</h2>
+            <p class="distext">
+              The submission of this report is made in good faith and should be
+              regarded solely as recommendations. Vastu principles are open to
+              interpretation and may vary among practitioners. The report serves
+              as an indication and is intended for general informational purposes
+              only.</p>
+          
+        </article>
+      </main>
+      <!-- <footer>
+        <div class="foot">
+          <p>
+            <b>Jayant Pandey </b>| Business Guru & Energy Vastu Expert|
+            <a href=" https://www.JayantPandey.com ">www.JayantPandey.com</a>|
+            Mumbai/Bhilai/Delhi/Dubai/London
+          </p>
+        </div>
+      </footer> -->
+    </div>
+    <div class="container">
+      <header>
+        <image
+          src="image/Jayant Pandey Logo.webp"
+          alt="Neeraj Shukla"
+          class="logo-img"
+        />
+      </header>
+      <main>
+        <article>
+          <h2 class="vastutext">Vastu Chakra</h2>
+          <image src="image/shakti.jpg" class="shakti-img"></image>
+        </article>
+      </main>
+      <!-- <footer>
+        <div class="foot">
+          <p>
+            <b>Jayant Pandey </b>| Business Guru & Energy Vastu Expert|
+            <a href=" https://www.JayantPandey.com ">www.JayantPandey.com</a>|
+            Mumbai/Bhilai/Delhi/Dubai/London
+          </p>
+        </div>
+      </footer> -->
+    </div>
+    <div class="container">
+      <header>
+        <image
+          src="image/Jayant Pandey Logo.webp"
+          alt="Neeraj Shukla"
+          class="logo-img"
+        />
+      </header>
+      <main>
+        <article>
+          <h2 class="vastutext">Floor Map</h2>
+          <label for="imageUpload" class="no-print">Choose an image:</label>
+          <input
+            type="file"
+            class="no-print"
+            name="imageUpload"
+            id="imageUpload"
+            accept="image/*"
+          />
+          <div id="imagePreview">
+            <!-- Image preview will be displayed here -->
+          </div>
+        </article>
+      </main>
+      <!-- <footer>
+        <div class="foot">
+          <p>
+            <b>Jayant Pandey </b>| Business Guru & Energy Vastu Expert|
+            <a href=" https://www.JayantPandey.com ">www.JayantPandey.com</a>|
+            Mumbai/Bhilai/Delhi/Dubai/London
+          </p>
+        </div>
+      </footer> -->
+    </div>
+    <div class="container">
+      <header>
+        <image
+          src="image/Jayant Pandey Logo.webp"
+          alt="Neeraj Shukla"
+          class="logo-img"
+        />
+      </header>
+      <main>
+        <article>
+          <h2 class="vastutext">Bar Chart</h2>
+          <label for="imageUpload" class="no-print">Choose an image:</label>
+          <input
+            type="file"
+            class="no-print"
+            name="imageUpload"
+            id="imageUploadbar"
+            accept="image/*"
+          />
+          <div id="imagePreviewbar">
+            <!-- Image preview will be displayed here -->
+          </div>
+          <div class="remark">
+            <p><strong>Remarks –</strong></p>
+            <p style="background-color: yellow; line-height: 1.2">
+              To get the best results for wall color, curtain color, pictures,
+              decoration item, tiles color, furniture. Do not try to balance all
+              the zones, only balance the important zones.
+            </p>
+            <h2>Enter Text</h2>
+            <textarea id="textInput" rows="4" cols="50" placeholder="Enter your text here..."></textarea>
+            <button onclick="displayContent()">Show Image and Text</button>
+            <!-- <ol style="color: #777; margin-left: 40px">
+              <li>If Bar is balanced – use the same element of the zone.</li>
+              <li>If Bar is extended – use the element of the next zone.</li>
+              <li>
+                If Bar is exhausted – use the element of the previous zone.
+              </li>
+            </ol> -->
+            <p><strong>Elements and their color, shape, and metal -</strong></p>
+            <table border="1">
+              <thead>
+                <tr class="Orange">
+                  <th>Elements</th>
+                  <th>Colour</th>
+                  <th>Shape</th>
+                  <th>Metal</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="blue-black">
+                  <td>Water</td>
+                  <td>Blue/Black</td>
+                  <td>Wavy</td>
+                  <td>Aluminium</td>
+                </tr>
+                <tr class="Green">
+                  <td>Air</td>
+                  <td>Green/Brown</td>
+                  <td>Rectangular</td>
+                  <td>SS</td>
+                </tr>
+                <tr class="Red">
+                  <td>Fire</td>
+                  <td>Red</td>
+                  <td>Triangle</td>
+                  <td>Copper</td>
+                </tr>
+                <tr class="Yellow">
+                  <td>Earth</td>
+                  <td>Yellow</td>
+                  <td>Square</td>
+                  <td>Brass</td>
+                </tr>
+                <tr class="Grey">
+                  <td>Space</td>
+                  <td>White/Grey</td>
+                  <td>Circular</td>
+                  <td>Iron/MS</td>
+                </tr>
+              </tbody>
+            </table>
+
+           
+            <p><strong>*Avoid the Anti colors in the zone for wall color, curtain color, pictures, decoration item, tiles color, furniture, carpets -</strong></p>
+            <table border="1">
+              <thead>
+                <tr class="Orange">
+                  <th>Elements</th>
+                  <th>Anti Element</th>
+                  <th>Anti Colors</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="blue-black">
+                  <td>Water</td>
+                  <td>Fire, Earth</td>
+                  <td>Red, Shades of Red, Yellow, Golden</td>
+                </tr>
+                <tr class="Red">
+                  <td>Fire</td>
+                  <td>Space, Water</td>
+                  <td>White, Grey, Blue, Black</td>
+                </tr>
+                <tr class="Yellow">
+                  <td>Earth</td>
+                  <td>Water, Air</td>
+                  <td>Blue, Black, Green, Brown</td>
+                </tr>
+                <tr class="Green">
+                  <td>Air</td>
+                  <td>Earth, Space</td>
+                  <td>Yellow, Golden, White, Grey</td>
+                </tr>
+                <tr class="Grey">
+                  <td>Space</td>
+                  <td>Air, Fire</td>
+                  <td>Green, Brown, Red, Shades of Red</td> 
+                </tr>
+              </tbody>
+            </table>
+
+            <!-- -------------------------------------------------------- -->
+            <table border="1">
+              <thead>
+                <tr>
+                  <th>DIRECTION</th>
+                  <th>ATRIBUTE</th>
+                  <th>OWN COLOUR</th>
+                  <th>FRIEND COLOURS</th>
+                  <th>ENEMY COLOURS</th>
+                  <th>ELEMENT</th>
+                  <th>SHAPE</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>N</td>
+                  <td>Money and Opportunities</td>
+                  <td>BLUE/BLACK</td>
+                  <td>WHITE/GREEN</td>
+                  <td>RED/YELLOW</td>
+                  <td>WATER</td>
+                  <td>WAVY</td>
+                </tr>
+                <tr>
+                  <td>NNE</td>
+                  <td>Healing, Health and Immunity</td>
+                  <td>BLUE/BLACK</td>
+                  <td>WHITE/GREEN</td>
+                  <td>RED/YELLOW</td>
+                  <td>WATER</td>
+                  <td>WAVY</td>
+                </tr>
+                <tr>
+                  <td>NE</td>
+                  <td>Ideas, Clarity and Wisdom</td>
+                  <td>BLUE/BLACK</td>
+                  <td>WHITE/GREEN</td>
+                  <td>RED/YELLOW</td>
+                  <td>WATER</td>
+                  <td>WAVY</td>
+                </tr>
+                <tr>
+                  <td>ENE</td>
+                  <td>Rejuvenation and Freshness in Life</td>
+                  <td>GREEN</td>
+                  <td>BLUE/BLACK/RED</td>
+                  <td>YELLOW /WHITE</td>
+                  <td>AIR</td>
+                  <td>RECTANGLE</td>
+                </tr>
+                <tr>
+                  <td>E</td>
+                  <td>Social Associations and Connectivity with the World</td>
+                  <td>GREEN</td>
+                  <td>BLUE/BLACK/RED</td>
+                  <td>YELLOW /WHITE</td>
+                  <td>AIR</td>
+                  <td>RECTANGLE</td>
+                </tr>
+                <tr>
+                  <td>ESE</td>
+                  <td>Anxiety and Grinding Situations</td>
+                  <td>GREEN</td>
+                  <td>BLUE/BLACK/RED</td>
+                  <td>YELLOW /WHITE</td>
+                  <td>AIR</td>
+                  <td>RECTANGLE</td>
+                </tr>
+                <tr>
+                  <td>SE</td>
+                  <td>Cash Flow and Fire in Life</td>
+                  <td>RED</td>
+                  <td>GREEN/YELLOW</td>
+                  <td>BLUE/BLACK/WHITE</td>
+                  <td>FIRE</td>
+                  <td>TRIANGLE</td>
+                </tr>
+                <tr>
+                  <td>SSE</td>
+                  <td>Power and Confidence</td>
+                  <td>RED</td>
+                  <td>GREEN/YELLOW</td>
+                  <td>BLUE/BLACK/WHITE</td>
+                  <td>FIRE</td>
+                  <td>TRIANGLE</td>
+                </tr>
+                <tr>
+                  <td>S</td>
+                  <td>Fame and Relaxation</td>
+                  <td>RED</td>
+                  <td>GREEN/YELLOW</td>
+                  <td>BLUE/BLACK/WHITE</td>
+                  <td>FIRE</td>
+                  <td>TRIANGLE</td>
+                </tr>
+                <tr>
+                  <td>SSW</td>
+                  <td>Expenditure and Wastage</td>
+                  <td>YELLOW</td>
+                  <td>RED/WHITE</td>
+                  <td>BLUE/BLACK/WHITE</td>
+                  <td>EARTH</td>
+                  <td>SQUARE</td>
+                </tr>
+                <tr>
+                  <td>SW</td>
+                  <td>Relationships and Excellence</td>
+                  <td>YELLOW</td>
+                  <td>RED/WHITE</td>
+                  <td>BLUE/BLACK/WHITE</td>
+                  <td>EARTH</td>
+                  <td>SQUARE</td>
+                </tr>
+                <tr>
+                  <td>WSW</td>
+                  <td>Education and Savings</td>
+                  <td>WHITE</td>
+                  <td>BLUE/BLACK/YELLOW</td>
+                  <td>RED/GREEN</td>
+                  <td>SPACE</td>
+                  <td>ROUND</td>
+                </tr>
+                <tr>
+                  <td>W</td>
+                  <td>Gains and Profits</td>
+                  <td>WHITE</td>
+                  <td>BLUE/BLACK/YELLOW</td>
+                  <td>RED/GREEN</td>
+                  <td>SPACE</td>
+                  <td>ROUND</td>
+                </tr>
+                <tr>
+                  <td>WNW</td>
+                  <td>Depression and Low Moods</td>
+                  <td>WHITE</td>
+                  <td>BLUE/BLACK/YELLOW</td>
+                  <td>RED/GREEN</td>
+                  <td>SPACE</td>
+                  <td>ROUND</td>
+                </tr>
+                <tr>
+                  <td>NW</td>
+                  <td>Help, Support and Banking</td>
+                  <td>WHITE</td>
+                  <td>BLUE/BLACK/YELLOW</td>
+                  <td>RED/GREEN</td>
+                  <td>SPACE</td>
+                  <td>ROUND</td>
+                </tr>
+                <tr>
+                  <td>NNW</td>
+                  <td>Attraction and Sex</td>
+                  <td>BLUE/BLACK</td>
+                  <td>RED/GREEN</td>
+                  <td>RED/YELLOW</td>
+                  <td>WATER</td>
+                  <td>WAVY</td>
+                </tr>
+              </tbody>
+            </table>
+            
+            <p> <b>16 Zone Analysis </b> </p>
+            <button id="toggle-btn" class="toggle-btn">Toggle Table Visibility</button>
+            <table id="zone-analysis-table" class="print-hide">
+              <thead>
+                  <tr>
+                      <th>Zone</th>
+                      <th>Disha Bal</th>
+                      <th>Colors Recommended for Wall, Furniture, and Objects for Best Results</th>
+                      <th>Zone's Own Color Can Also Be Used</th>
+                      <th>Avoid These Anti Colors</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td>NNW</td>
+                      <td>
+                        <select class="firstSelect">
+                            <option value="Balanced">Balanced</option>
+                            <option value="Exhausted">Exhausted</option>
+                            <option value="Extended">Extended</option>
+                        </select>
+                    </td>
+                    <td>
+                      <select class="secondSelect">
+                        <option value="Balanced">Blue , Black</option>
+                        <option value="Exhausted">Grey , White</option>
+                        <option value="Extended">Green , Brown</option>
+                    </select>
+                    </td>
+                      <td>Blue, Black</td>
+
+                      <td>Red, Shades of Red, Yellow, Golden</td>
+                  </tr>
+                  <tr>
+                      <td>NORTH</td>
+                      <td>
+                        <select class="firstSelect">
+                            <option value="Balanced">Balanced</option>
+                            <option value="Exhausted">Exhausted</option>
+                            <option value="Extended">Extended</option>
+                        </select>
+                    </td>
+                    <td>
+                      <select class="secondSelect">
+                        <option value="Balanced">Blue , Black</option>
+                        <option value="Exhausted">Grey , White</option>
+                        <option value="Extended">Green , Brown</option>
+                    </select>
+                    </td>
+                     
+                      <td>Blue, Black</td>
+                      <td>Red, Shades of Red, Yellow, Golden</td>
+                  </tr>
+                  <tr>
+                    <td>NNE</td>
+                    <td>
+                      <select class="firstSelect">
+                          <option value="Balanced">Balanced</option>
+                          <option value="Exhausted">Exhausted</option>
+                          <option value="Extended">Extended</option>
+                      </select>
+                  </td>
+                  <td>
+                    <select class=" secondSelect">
+                      <option value="Balanced">Blue , Black</option>
+                      <option value="Exhausted">Grey , White</option>
+                      <option value="Extended">Green , Brown</option>
+                  </select>
+                  </td>
+                    <td>Blue, Black</td>
+                    <td>Red, Shades of Red, Yellow, Golden</td>
+                </tr>
+                <tr>
+                    <td>NE</td>
+                    <td>
+                      <select class="firstSelect">
+                          <option value="Balanced">Balanced</option>
+                          <option value="Exhausted">Exhausted</option>
+                          <option value="Extended">Extended</option>
+                      </select>
+                  </td>
+                  <td>
+                    <select class="secondSelect">
+                      <option value="Balanced">Blue , Black</option>
+                      <option value="Exhausted">Grey , White</option>
+                      <option value="Extended">Green , Brown</option>
+                  </select>
+                  </td>
+                  
+                    <td>Blue, Black</td>
+                    <td>Red, Shades of Red, Yellow, Golden</td>
+                </tr>
+                <tr>
+                    <td>ENE</td>
+                    <td>
+                      <select class="firstSelect">
+                          <option value="Balanced">Balanced</option>
+                          <option value="Exhausted">Exhausted</option>
+                          <option value="Extended">Extended</option>
+                      </select>
+                  </td>
+                  <td>
+                    <select class="secondSelect">
+                      <option value="Balanced">Green , Brown</option>
+                      <option value="Exhausted">Blue , Black</option>
+                      <option value="Extended">Peach, Pink , Orange</option>
+                  </select>
+                  </td>
+                    
+                    <td>Green, Brown</td>
+                    <td>Yellow, Golden, Grey, White</td>
+                </tr>
+                <tr>
+                    <td>EAST</td>
+                    <td>
+                      <select class="firstSelect">
+                          <option value="Balanced">Balanced</option>
+                          <option value="Exhausted">Exhausted</option>
+                          <option value="Extended">Extended</option>
+                      </select>
+                  </td>
+                  <td>
+                    <select class="secondSelect">
+                      <option value="Balanced">Green , Brown</option>
+                      <option value="Exhausted">Blue , Black</option>
+                      <option value="Extended">Peach, Pink , Orange</option>
+                  </select>
+                  </td>
+                   
+                    <td>Green, Brown</td>
+                    <td>Yellow, Golden, Grey, White</td>
+                </tr>
+                <tr>
+                    <td>ESE</td>
+                    <td>
+                      <select class="firstSelect">
+                          <option value="Balanced">Balanced</option>
+                          <option value="Exhausted">Exhausted</option>
+                          <option value="Extended">Extended</option>
+                      </select>
+                  </td>
+                  <td>
+                    <select class="secondSelect">
+                      <option value="Balanced">Green , Brown</option>
+                      <option value="Exhausted">Blue , Black</option>
+                      <option value="Extended">Peach, Pink , Orange</option>
+                  </select>
+                  </td>
+                    
+                    <td>Green, Brown</td>
+                    <td>Yellow, Golden, Grey, White</td>
+                </tr>
+                <tr>
+                    <td>SE</td>
+                    <td>
+                      <select class="firstSelect">
+                          <option value="Balanced">Balanced</option>
+                          <option value="Exhausted">Exhausted</option>
+                          <option value="Extended">Extended</option>
+                      </select>
+                  </td>
+                  <td>
+                    <select class="secondSelect">
+                      <option value="Balanced">Peach, Pink , Orange</option>
+                      <option value="Exhausted">Green, Brown</option>
+                      <option value="Extended">Yellow, Golden</option>
+                  </select>
+                  </td>
+                   
+                    <td>Red, Peach, Pink, Orange</td>
+                    <td>Blue, Black, Grey, White</td>
+                </tr>
+                <tr>
+                    <td>SSE</td>
+                    <td>
+                      <select class="firstSelect">
+                          <option value="Balanced">Balanced</option>
+                          <option value="Exhausted">Exhausted</option>
+                          <option value="Extended">Extended</option>
+                      </select>
+                  </td>
+                  <td>
+                    <select class="secondSelect">
+                      <option value="Balanced">Peach, Pink , Orange</option>
+                      <option value="Exhausted">Green, Brown</option>
+                      <option value="Extended">Yellow, Golden</option>
+                  </select>
+                  </td>
+                    
+                    <td>Red, Peach, Pink, Orange</td>
+                    <td>Blue, Black, Grey, White</td>
+                </tr>
+                <tr>
+                    <td>SOUTH</td>
+                    <td>
+                      <select class="firstSelect">
+                          <option value="Balanced">Balanced</option>
+                          <option value="Exhausted">Exhausted</option>
+                          <option value="Extended">Extended</option>
+                      </select>
+                  </td>
+                  <td>
+                    <select class="secondSelect">
+                      <option value="Balanced">Peach, Pink , Orange</option>
+                      <option value="Exhausted">Green, Brown</option>
+                      <option value="Extended">Yellow, Golden</option>
+                  </select>
+                  </td>
+                   
+                    <td>Red, Peach, Pink, Orange</td>
+                    <td>Blue, Black, Grey, White</td>
+                </tr>
+                <tr>
+                    <td>SSW</td>
+                    <td>
+                      <select class="firstSelect">
+                          <option value="Balanced">Balanced</option>
+                          <option value="Exhausted">Exhausted</option>
+                          <option value="Extended">Extended</option>
+                      </select>
+                  </td>
+                  <td>
+                    <select class="secondSelect">
+                      <option value="Balanced">Yellow, Golden</option>
+                      <option value="Exhausted">Peach, Pink , Orange</option>
+                      <option value="Extended">Grey, White</option>
+                  </select>
+                  </td>
+                   
+                    <td>Yellow, Golden</td>
+                    <td>Blue, Black, Green, Brown</td>
+                </tr>
+                <tr>
+                    <td>SW</td>
+                    <td>
+                      <select class="firstSelect">
+                          <option value="Balanced">Balanced</option>
+                          <option value="Exhausted">Exhausted</option>
+                          <option value="Extended">Extended</option>
+                      </select>
+                  </td>
+                  <td>
+                    <select class="secondSelect">
+                      <option value="Balanced">Yellow, Golden</option>
+                      <option value="Exhausted">Peach, Pink , Orange</option>
+                      <option value="Extended">Grey, White</option>
+                  </select>
+                  </td>
+                   
+                    <td>Yellow, Golden</td>
+                    <td>Blue, Black, Green, Brown</td>
+                </tr>
+                <tr>
+                    <td>WSW</td>
+                    <td>
+                      <select class="firstSelect">
+                          <option value="Balanced">Balanced</option>
+                          <option value="Exhausted">Exhausted</option>
+                          <option value="Extended">Extended</option>
+                      </select>
+                  </td>
+                  <td>
+                    <select class="secondSelect">
+                      <option value="Balanced">Grey, White</option>
+                      <option value="Exhausted">Yellow, Golden</option>
+                      <option value="Extended">Blue, Black</option>
+                  </select>
+                  </td>
+                   
+                    <td>Grey, White</td>
+                    <td>Red, Shades of Red, Brown, Green</td>
+                </tr>
+                <tr>
+                    <td>WEST</td>
+                    <td>
+                      <select class="firstSelect">
+                          <option value="Balanced">Balanced</option>
+                          <option value="Exhausted">Exhausted</option>
+                          <option value="Extended">Extended</option>
+                      </select>
+                  </td>
+                  <td>
+                    <select class="secondSelect">
+                      <option value="Balanced">Grey, White</option>
+                      <option value="Exhausted">Yellow, Golden</option>
+                      <option value="Extended">Blue, Black</option>
+                  </select>
+                  </td>
+                   
+                    <td>Grey, White</td>
+                    <td>Red, Shades of Red, Brown, Green</td>
+                </tr>
+                <tr>
+                    <td>WNW</td>
+                    <td>
+                      <select class="firstSelect">
+                          <option value="Balanced">Balanced</option>
+                          <option value="Exhausted">Exhausted</option>
+                          <option value="Extended">Extended</option>
+                      </select>
+                  </td>
+                  <td>
+                    <select class="secondSelect">
+                      <option value="Balanced">Grey, White</option>
+                      <option value="Exhausted">Yellow, Golden</option>
+                      <option value="Extended">Blue, Black</option>
+                  </select>
+                  </td>
+                    
+                    <td>Grey, White</td>
+                    <td>Red, Shades of Red, Brown, Green</td>
+                </tr>
+                <tr>
+                    <td>NW</td>
+                    <td>
+                      <select class="firstSelect">
+                          <option value="Balanced">Balanced</option>
+                          <option value="Exhausted">Exhausted</option>
+                          <option value="Extended">Extended</option>
+                      </select>
+                  </td>
+                  <td>
+                    <select class="secondSelect">
+                      <option value="Balanced">Grey, White</option>
+                      <option value="Exhausted">Yellow, Golden</option>
+                      <option value="Extended">Blue, Black</option>
+                  </select>
+                  </td>
+                    
+                    <td>Grey, White</td>
+                    <td>Red, Shades of Red, Brown, Green</td>
+                </tr>
+              </tbody>
+          </table>
+          
+          </div>
+        </article>
+      </main>
+      <!-- <footer>
+        <div class="foot">
+          <p>
+            <b>Jayant Pandey </b>| Business Guru & Energy Vastu Expert|
+            <a href=" https://www.JayantPandey.com ">www.JayantPandey.com</a>|
+            Mumbai/Bhilai/Delhi/Dubai/London
+          </p>
+        </div>
+      </footer> -->
+    </div>
+    <div class="container">
+      <header>
+        <image
+          src="image/Jayant Pandey Logo.webp"
+          alt="Neeraj Shukla"
+          class="logo-img"
+        />
+      </header>
+      <main>
+        <p><b>16 Zones Balancing -</b></p>
+        <article>
+          <div id="editor" ></div>
+        </article>
+        <article>
+          <div id="editor" ></div>
+        </article>
+      </main>
+      
+      <!-- <footer>
+        <div class="foot">
+          <p>
+            <b>Jayant Pandey </b>| Business Guru & Energy Vastu Expert|
+            <a href=" https://www.JayantPandey.com ">www.JayantPandey.com</a>|
+            Mumbai/Bhilai/Delhi/Dubai/London
+          </p>
+        </div>
+      </footer> -->
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
