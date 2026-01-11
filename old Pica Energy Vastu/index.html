@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/site.css" rel="stylesheet">
+    <link href="css/barchart.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Playfair+Display:ital,wght@1,500&family=Poppins:wght@400;500;700&family=Rubik:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@1.1.0"></script>
+    <title>Energy Vastu App</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pica/9.0.1/pica.min.js"></script>
+</head>
+<body>
+        <header>
+            <div class="container-fluid">
+                <image
+                src="/images/Jayant Pandey Logo.webp"
+                alt="Neeraj Shukla"
+                class="logo-img"
+            />
+            <div class="headflex">
+                <h1 class="Welcome-1">Energy Vastu</h1>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>          
+            </div>
+      </header>
+      <div class="container" id="main">
+        <div class="row">
+            <div class="col-6">            
+                <h3>Discover the Energy Vastu Solution with easy Steps</h3>
+                <h4>Identify the 16 Energy Vastu Zones on your floor layout.</h4>
+                <div class="mt-2">
+                    <button id="floorImgUpload" class="btn btn-sm btn-outline-primary">Upload Floor Plan</button>
+                </div>
+                <div class="mt-2">
+                    <button href="" class="btn btn-sm btn-outline-primary btnSame" id="btnNext">Next</button>
+                </div>
+            </div>
+            <div class="col-6">
+                <img src="images/vastuwheel.png" class="img-fluid" />
+            </div>
+        </div>
+      </div>    
+    <!--floor picture-->
+    <div class="container mt-3 mb-3" id="nextMain">
+        <div class="row">
+            <div class="col-12">
+                <h3>Select the corners of floor plan with start polygon</h3>
+                <h5>Once all corners selected click on stop polygon & then add wheel, also You can Reset the corners by clicking Reset Drawing</h5>
+            </div>
+        </div>        
+        <div class="row" id="floorPic">
+            <div class="col-2">
+                <div class="row my-2">
+                    <div class="col-12">
+                        <button class="btn btn-sm btn-outline-dark btnSame home">Goto Home</button>
+                    </div>
+                </div>  
+                <div class="row">
+                    <div class="col-12">
+                        <button class="btn btn-sm btn-outline-success btnSame" id="startPolygon">Start Polygon</button>
+                    </div>
+                </div>
+                <div class="row my-2">
+                    <div class="col-12">                        
+                        <button class="btn btn-sm btn-outline-danger btnSame" id="stopPolygon">Stop Polygon</button>
+                    </div>
+                </div>
+                <div class="row my-2">
+                    <div class="col-12">                        
+                        <button class="btn btn-sm btn-outline-dark btnSame" id="cropReset">Reset Drawing</button>
+                    </div>
+                </div>
+                <div class="row my-2">
+                    <div class="col-12">                        
+                        <button class="btn btn-sm btn-outline-primary btnSame" id="addWheel">Add Wheel</button>
+                    </div>
+                </div>
+            </div>            
+            <div class="col-10 text-center">
+                <canvas id="imgPreview" width="800" height="586"></canvas>
+            </div>
+        </div>
+    </div>
+    <!--end of floor picture-->
+    <!--floor with wheel-->
+    <div class="container mt-3 mb-3" id="floorWithWheel">
+        <div class="row">
+            <div class="col-12">
+                <h3>Rotate & Download</h3>
+                <h5>Set the wheel & image by dragging and download by clicking on Download.</h5>
+            </div>
+        </div>          
+        <div class="row" id="floorWithWheelPic">
+            <div class="col-2">                 
+                <div class="row">
+                    <div class="col-12">
+                        <label class="form-label">Select the degree to rotate:</label>
+                        <input type="number" 
+                            min="0" max="360"
+                            id="degreeToRotate"
+                            class="form-control form-control-sm"
+                            value="0"
+                            onKeyDown="if(this.value.length==3 && event.keyCode>47 && event.keyCode < 58)return false;"
+                            />
+                    </div>
+                </div>                
+                <div class="row">
+                    <div class="col-12 my-2">                        
+                        <button class="btn btn-sm btn-outline-danger btnSame" id="rotate">Rotate</button>
+                    </div>
+                </div>             
+                <div class="row my-2">
+                    <div class="col-12">
+                        <button class="btn btn-sm btn-outline-success btnSame" id="download">Download</button>
+                    </div>
+                </div> 
+                <div class="row my-2">
+                    <div class="col-12">
+                        <button class="btn btn-sm btn-outline-dark btnSame home">Goto Home</button>
+                    </div>
+                </div>                 
+            </div>            
+            <div class="col-10 text-center" id="divToDowload" style="border: 1px solid #ccc">
+                <div class="my-5" id="print">                    
+                    <div id="imgWheel"></div>
+                    <canvas id="imgCropFloor" width="600" height="520" crossorigin="anonymous"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-3 mb-3" id="barChart">
+        <div class="headflex">
+            <h2>16 Direction area calculation</h2>
+        </div>
+        </header>
+        <input type="file" id="floor-plan-input" accept=".jpg, .jpeg, .png" />
+        <canvas id="floor-plan-canvas"></canvas>
+        <button id="start-polygon-btn">Start Polygon</button>
+        <button id="end-polygon-btn">End Polygon</button>
+        <p id="area">Area: </p>
+        <p id="center">Center: </p>
+        <table id="wind-direction-table">
+            <thead>
+                <tr>
+                    <th>Direction</th>
+                    <th>Area</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        <div id="bar-chart-container">
+            <canvas id="bar-chart"></canvas>
+        </div>
+        <button id="download-bar-chart-btn">Download Bar Chart</button>
+    </div>
+       
+    <footer>
+        <div class="foot">
+          <img
+            class="img"
+            src="/images/jayant_pandeyabout_edited_edited.webp"
+          />
+          <p>
+            <b>Jayant Pandey </b><br />
+            Brand Astrologer & Energy Vastu Expert
+            <br />
+            Kaatyaayani Jyotish
+            <br />
+            Call : +919004500006
+            <br />
+            <a href="http://bit.ly/3RiBHOA">E-Business Card</a><br />
+            <a href=" https://www.JayantPandey.com ">www.JayantPandey.com</a><br
+            />
+            Mumbai/Bhilai/Delhi/Dubai/London
+          </p>
+        </div>
+      </footer>
+      <script>
+        document.getElementById("download").addEventListener("click", function () {
+            let script = document.createElement("script");
+            script.src = "js/barchart.js";  
+            document.body.appendChild(script);
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>    
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="js/script.js"></script>    
+    <script src="js/events.js"></script>    
+    <script src="lib/html2canvas.js"></script>
+</body>
+</html>
