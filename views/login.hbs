@@ -1,0 +1,110 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Playfair+Display:ital,wght@1,500&family=Poppins:wght@400;500;700&family=Rubik:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/logi.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <title>Jayant Pandey Numerology</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <image
+          src="/images/Jayant Pandey Logo.webp"
+          alt="Neeraj Shukla"
+          class="logo-img"
+        />
+        <div class="headflex">
+          <h1 class="Welcome-1">Numerology</h1>
+        </div>
+      </header>
+      {{#if msg}}
+        <p class="{{msg_type}}">{{msg}}</p>
+      {{/if}}
+      <form
+        action="/auth/login"
+        method="post"
+        class="form1 active"
+        id="login-form"
+      >
+        <h1 class="Welcome-2">Login</h1>
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Username</span>
+            <input
+              type="text"
+              placeholder="Enter your Username"
+              id="username"
+              required
+              name="username"
+            />
+          </div>
+
+          <div class="input-box">
+            <span class="details">Password</span>
+            <input
+              type="password"
+              placeholder="Enter your Password"
+              id="password"
+              required
+              name="password"
+            />
+          </div>
+        </div>
+
+        <div class="btn">
+          <button type="submit">Login</button>
+        </div>
+        <p class="input-box">
+          Don't have an account ?
+          <a href="/register">Sign Up</a>
+        </p>
+      </form>
+
+      <footer>
+        <div class="foot">
+          <img
+            class="img"
+            src="/images/jayant_pandeyabout_edited_edited.webp"
+          />
+          <p>
+            <b>Jayant Pandey </b><br />
+            Brand Astrologer & Energy Vastu Expert
+            <br />
+            Kaatyaayani Jyotish
+            <br />
+            Call : +919004500006
+            <br />
+            <a href="http://surl.li/lmzys">E-Business Card</a><br />
+            <a href=" https://www.JayantPandey.com ">www.JayantPandey.com</a><br
+            />
+            Mumbai/Bhilai/Delhi/Dubai/London
+          </p>
+        </div>
+        <p id="copyright">Developed by Neeraj Shukla, contact no
+          <a href="tel:+919972162200">+919972162200</a>
+        </p>
+      </footer>
+    </div>
+
+  </body>
+</html>

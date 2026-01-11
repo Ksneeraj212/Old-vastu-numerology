@@ -1,0 +1,160 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Playfair+Display:ital,wght@1,500&family=Poppins:wght@400;500;700&family=Rubik:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="/script.js"></script>
+    <title>Jayant Pandey Numerology</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <image
+          src="/images/Jayant Pandey Logo.webp"
+          alt="Neeraj Shukla"
+          class="logo-img"
+        />
+        <div class="headflex">
+          <h1 class="Welcome">Welcome to our Family</h1>
+        </div>
+      </header>
+      <form action="#">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Enter your Name</span>
+            <input
+              type="text"
+              placeholder="Enter your name"
+              required
+              class="Name"
+              onkeyup="myChaldean()"
+            />
+          </div>
+          <div class="input-box">
+            <span class="details">Date of Birth</span>
+            <input
+              type="date"
+              class="dob"
+              placeholder="dd/mm/yyyy"
+              onchange="myFate()"
+            />
+          </div>
+          <div class="input-box">
+            <span class="details">Chaldean Number
+              <ion-icon
+                name="information-circle"
+                class="info-icon"
+                data-tooltip="In the Chaldean system, you need to know the meaning of single & compound numbers. 
+                The single number represents the physical, outward person. In contrast, the compound number represents 
+                the deeper hidden influences behind the single-digit number"
+              ></ion-icon>
+            </span>
+            <input type="text" class="chald" />
+          </div>
+          <div class="input-box">
+            <span class="details">Moolank
+              <ion-icon
+                name="information-circle"
+                class="info-icon"
+                data-tooltip="the root number effect refers to the belief that the root number of a person's birth date or name can have an influence on their personality traits and life path. This single-digit root number is believed to hold significance and provide insights into a person's character, strengths, weaknesses, and potential life experiences. 
+                It is often used in numerology to analyze and interpret various aspects of a person's life."
+              ></ion-icon></span>
+
+            <input type="text" class="root" />
+          </div>
+          <div class="input-box">
+            <span class="details">Pythagorean Number
+              <ion-icon
+                name="information-circle"
+                class="info-icon"
+                data-tooltip="Pythagorean numerology is also known as Modern numerology and starts with six primary numbers. 
+                Three of these numbers are derived from the native's birth date, and the other three come from the name. 
+                And these six numbers ideally give a clear insight into who they are and how they can improvise their lives"
+              ></ion-icon></span>
+            <input type="text" class="pytha" />
+          </div>
+          <div class="input-box">
+            <span class="details">Destiny Number
+              <ion-icon
+                name="information-circle"
+                class="info-icon"
+                data-tooltip="destiny number is calculated using the full birth name of an individual.
+                It represents the path or purpose that a person is destined to follow in life. 
+                The destiny number is believed to provide insights into a person's strengths, weaknesses, 
+                and overall life purpose. It can also indicate the opportunities and challenges 
+                that may arise throughout their life journey. By understanding their destiny number, 
+                individuals can gain a deeper understanding of themselves and make informed decisions about their life path."
+              ></ion-icon></span>
+            <input type="text" class="fate" />
+          </div>
+          <div class="input-box">
+            <span class="details">Desired Number
+              <ion-icon
+                name="information-circle"
+                class="info-icon"
+                data-tooltip="desire number represents the innermost desires and motivations of an individual. 
+                It is calculated using the vowels in a person's full birth name. The heart's desire number reveals 
+                what a person truly wants in life, their passions, and what brings them joy and fulfillment. 
+                It can provide insights into a person's 
+                deepest desires and help them understand what drives them on a soul level."
+              ></ion-icon></span>
+            <input type="text" class="Desire" />
+          </div>
+          <div class="input-box">
+            <span class="details">Personality Number
+              <ion-icon
+                name="information-circle"
+                class="info-icon"
+                data-tooltip="The personality number in numerology is derived from the consonants in a person's 
+                full birth name. It represents the outer traits and characteristics that others perceive about an individual. 
+                The personality number can provide insights into how a person presents themselves to the world, their social interactions, and their overall demeanor.
+                It can also indicate the first impression that others may have of them. However, it's important to note that numerology is not scientifically 
+                proven and should be taken as a form of entertainment rather than a definitive guide to personality traits."
+              ></ion-icon></span>
+            <input type="text" class="person" />
+          </div>
+        </div>
+      </form>
+      <footer>
+        <div class="foot">
+          <img
+            class="img"
+            src="/images/jayant_pandeyabout_edited_edited.webp"
+          />
+          <p>
+            <b>Jayant Pandey </b><br />
+            Brand Astrologer & Energy Vastu Expert
+            <br />
+            Kaatyaayani Jyotish
+            <br />
+            Call : +919004500006
+            <br />
+            <a href="http://surl.li/lmzys">E-Business Card</a><br />
+            <a href=" https://www.JayantPandey.com ">www.JayantPandey.com</a><br
+            />
+            Mumbai/Bhilai/Delhi/Dubai/London
+          </p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

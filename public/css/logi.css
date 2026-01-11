@@ -1,0 +1,29 @@
+.Welcome-2 {
+  font-size: 25px;
+  text-transform: capitalize;
+  font-style: normal;
+  margin-left: 550px;
+}
+form {
+  display: none;
+}
+form.active {
+  display: block;
+}
+form .btn{
+  margin: 30px 0;
+  height: 45px;
+  width:100%;
+}
+form .btn button{
+  height: 100%;
+  width: 100%;
+  outline: none;
+  color: #fff;
+  border: none;
+  font-size: 18px;
+  font-weight: 800;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  background: linear-gradient(135deg, rgb(185, 42, 56), #b66959);
+}
