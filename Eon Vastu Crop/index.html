@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/site.css" rel="stylesheet">
+    <title>Eon Vastu App</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pica/9.0.1/pica.min.js"></script>
+</head>
+<body>
+        <header>
+            <div class="container-fluid">
+                <image
+                src="/images/Jayant Pandey Logo.webp"
+                alt="Neeraj Shukla"
+                class="logo-img"
+            />
+            <div class="headflex">
+                <h1 class="Welcome-1">Eon Vastu</h1>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>          
+            </div>
+      </header>
+      <div class="container" id="main">
+        <div class="row">
+            <div class="col-6">            
+                <h3>Discover the Eon Vastu Solution with easy Steps</h3>
+                <h4>Identify the 16 Eon Vastu Zones on your floor layout.</h4>
+                <div class="mt-2">
+                    <button id="floorImgUpload" class="btn btn-sm btn-outline-primary">Upload Floor Plan</button>
+                </div>
+                <div class="mt-2">
+                    <button href="" class="btn btn-sm btn-outline-primary btnSame" id="btnNext">Next</button>
+                </div>
+            </div>
+            <div class="col-6">
+                <img src="images/vastuwheel.png" class="img-fluid" />
+            </div>
+        </div>
+      </div>    
+    <!--floor picture-->
+    <div class="container mt-3 mb-3" id="nextMain">
+        <div class="row">
+            <div class="col-12">
+                <h3>Crop the floor plan with crop image</h3>
+                <h5>Once cropped click on Add Wheel, also You can Reset the cropped area by clicking Reset Crop</h5>
+            </div>
+        </div>        
+        <div class="row" id="floorPic">
+            <div class="col-2">
+                <div class="row">
+                    <div class="col-12">
+                        <button class="btn btn-sm btn-outline-success btnSame" id="cropImg">Crop Image</button>
+                    </div>
+                </div>
+                <div class="row my-2">
+                    <div class="col-12">                        
+                        <button class="btn btn-sm btn-outline-danger btnSame" id="cropReset">Reset Crop</button>
+                    </div>
+                </div>
+                <div class="row my-2">
+                    <div class="col-12">                        
+                        <button class="btn btn-sm btn-outline-primary btnSame" id="addWheel">Add Wheel</button>
+                    </div>
+                </div>
+            </div>            
+            <div class="col-10 text-center">
+                <canvas id="imgPreview" width="800" height="586"></canvas>
+            </div>
+        </div>
+    </div>
+    <!--end of floor picture-->
+    <!--floor with wheel-->
+    <div class="container mt-3 mb-3" id="floorWithWheel">
+        <div class="row">
+            <div class="col-12">
+                <h3>Rotate & Download</h3>
+                <h5>Set the wheel & image by dragging and download by clicking on Download.</h5>
+            </div>
+        </div>          
+        <div class="row" id="floorWithWheelPic">
+            <div class="col-2">                 
+                <div class="row">
+                    <div class="col-12">
+                        <label class="form-label">Select the degree to rotate:</label>
+                        <input type="number" 
+                            min="0" max="360"
+                            id="degreeToRotate"
+                            class="form-control form-control-sm"
+                            value="0"
+                            onKeyDown="if(this.value.length==3 && event.keyCode>47 && event.keyCode < 58)return false;"
+                            />
+                    </div>
+                </div>                
+                <div class="row">
+                    <div class="col-12 my-2">                        
+                        <button class="btn btn-sm btn-outline-danger btnSame" id="rotate">Rotate</button>
+                    </div>
+                </div>             
+                <div class="row my-2">
+                    <div class="col-12">
+                        <button class="btn btn-sm btn-outline-success btnSame" id="download">Download</button>
+                    </div>
+                </div> 
+                <div class="row my-2">
+                    <div class="col-12">
+                        <button class="btn btn-sm btn-outline-dark btnSame" id="home">Goto Home</button>
+                    </div>
+                </div>                 
+            </div>            
+            <div class="col-10 text-center" id="divToDowload" style="border: 1px solid #ccc">
+                <div class="my-5" id="print">                    
+                    <div id="imgWheel"></div>
+                    <canvas id="imgCropFloor" width="600" height="520" crossorigin="anonymous"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="foot">
+          <img
+            class="img"
+            src="/images/jayant_pandeyabout_edited_edited.webp"
+          />
+          <p>
+            <b>Jayant Pandey </b><br />
+            Brand Astrologer & Energy Vastu Expert
+            <br />
+            Kaatyaayani Jyotish
+            <br />
+            Call : +919004500006
+            <br />
+            <a href="http://bit.ly/3RiBHOA">E-Business Card</a><br />
+            <a href=" https://www.JayantPandey.com ">www.JayantPandey.com</a><br
+            />
+            Mumbai/Bhilai/Delhi/Dubai/London
+          </p>
+        </div>
+      </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>    
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="js/fileUtil.js"></script>    
+    <script src="lib/html2canvas.js"></script>
+</body>
+</html>
